@@ -6,7 +6,6 @@
     <title>Lahoucine - Développeur Web</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <script src="script.js"></script>
   <body>
 
     <nav>
@@ -19,6 +18,7 @@
     </nav>
 
     <header>
+      <div class="avatar">L</div>
       <h1>Lahoucine Amalakh</h1>
       <p>Développeur Web Freelance</p>
     </header>
@@ -46,17 +46,16 @@
       </div>
     </section>
 
-   <section id="contact">
-  <h2>Me contacter</h2>
-  <p>Tu as un projet ? Écris-moi !</p>
-  
-  <input id="nom" type="text" placeholder="Ton nom">
-  <input id="email" type="email" placeholder="Ton email">
-  <textarea id="messageTexte" placeholder="Ton message"></textarea>
-  <button class="bouton" onclick="envoyerMessage()">Envoyer</button>
-  
-  <p id="message"></p>
-</section>
+    <section id="contact">
+      <h2>Me contacter</h2>
+      <p>Tu as un projet ? Écris-moi !</p>
+      <input id="nom" type="text" placeholder="Ton nom">
+      <input id="email" type="email" placeholder="Ton email">
+      <textarea id="messageTexte" placeholder="Ton message"></textarea>
+      <button class="bouton" onclick="envoyerMessage()">Envoyer</button>
+      <p id="message"></p>
+    </section>
 
+    <script src="script.js"></script>
   </body>
 </html>
