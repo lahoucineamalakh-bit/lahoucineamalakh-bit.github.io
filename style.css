@@ -11,6 +11,7 @@ header {
   color: white;
   padding: 40px;
   text-align: center;
+  animation: apparition 1.5s ease-in-out;
 }
 
 section {
@@ -53,6 +54,19 @@ h2 {
   padding: 20px;
   flex: 1;
   text-align: center;
+  animation: apparition 1s ease-in-out;
+}
+
+.carte:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.carte:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.carte:nth-child(3) {
+  animation-delay: 0.6s;
 }
 
 nav {
@@ -79,6 +93,7 @@ nav a {
 nav a:hover {
   color: #f39c12;
 }
+
 input, textarea {
   display: block;
   width: 100%;
@@ -92,8 +107,19 @@ input, textarea {
 textarea {
   height: 120px;
 }
-header {
-  animation: apparition 1.5s ease-in-out;
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f39c12;
+  color: white;
+  font-size: 42px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
 }
 
 @keyframes apparition {
@@ -105,21 +131,9 @@ header {
     opacity: 1;
     transform: translateY(0px);
   }
-}.carte {
-  animation: apparition 1s ease-in-out;
 }
 
-.carte:nth-child(1) {
-  animation-delay: 0.2s;
-}
-
-.carte:nth-child(2) {
-  animation-delay: 0.4s;
-}
-
-.carte:nth-child(3) {
-  animation-delay: 0.6s;
-}@media (max-width: 768px) {
+@media (max-width: 768px) {
   nav {
     flex-direction: column;
     text-align: center;
@@ -138,4 +152,12 @@ header {
     padding: 15px;
     margin: 10px;
   }
+}
+footer {
+  background-color: #1a252f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
 }
