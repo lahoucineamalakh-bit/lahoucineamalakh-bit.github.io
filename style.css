@@ -92,3 +92,50 @@ input, textarea {
 textarea {
   height: 120px;
 }
+header {
+  animation: apparition 1.5s ease-in-out;
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}.carte {
+  animation: apparition 1s ease-in-out;
+}
+
+.carte:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.carte:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.carte:nth-child(3) {
+  animation-delay: 0.6s;
+}@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .cartes {
+    flex-direction: column;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  section {
+    padding: 15px;
+    margin: 10px;
+  }
+}
