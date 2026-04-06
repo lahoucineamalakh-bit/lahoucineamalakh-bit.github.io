@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lahoucine - Développeur Web</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <script src="script.js"></script>
+  <body>
+
+    <nav>
+      <span class="logo">Lahoucine</span>
+      <div class="nav-liens">
+        <a href="#apropos">À propos</a>
+        <a href="#services">Mes services</a>
+        <a href="#contact">Me contacter</a>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Lahoucine Amalakh</h1>
+      <p>Développeur Web Freelance</p>
+    </header>
+
+    <section id="apropos">
+      <h2>À propos de moi</h2>
+      <p>Je crée des sites web modernes et efficaces pour les petites entreprises et les entrepreneurs.</p>
+    </section>
+
+    <section id="services">
+      <h2>Mes services</h2>
+      <div class="cartes">
+        <div class="carte">
+          <h3>Sites vitrines</h3>
+          <p>Une page pro pour présenter ton activité</p>
+        </div>
+        <div class="carte">
+          <h3>Intégration</h3>
+          <p>Je transforme tes maquettes en pages web</p>
+        </div>
+        <div class="carte">
+          <h3>Maintenance</h3>
+          <p>Je m'occupe de ton site au quotidien</p>
+        </div>
+      </div>
+    </section>
+
+   <section id="contact">
+  <h2>Me contacter</h2>
+  <p>Tu as un projet ? Écris-moi !</p>
+  
+  <input id="nom" type="text" placeholder="Ton nom">
+  <input id="email" type="email" placeholder="Ton email">
+  <textarea id="messageTexte" placeholder="Ton message"></textarea>
+  <button class="bouton" onclick="envoyerMessage()">Envoyer</button>
+  
+  <p id="message"></p>
+</section>
+
+  </body>
+</html>
