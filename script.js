@@ -12,3 +12,7 @@ function envoyerMessage() {
     message.style.color = "green"
   }
 }
+
+if (typeof module !== 'undefined') {
+  module.exports = { envoyerMessage }
+}
