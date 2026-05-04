@@ -1,4 +1,4 @@
-const { envoyerMessage } = require('./script')
+const { envoyerMessage } = require('./formValidator')
 
 function setupDOM({ nom = '', email = '', texte = '' } = {}) {
   document.body.innerHTML = `
